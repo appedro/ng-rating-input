@@ -1,0 +1,13 @@
+<button
+  #button
+  id="button"
+  (mousemove)="getPrimaryColorPosition($event)"
+  (click)="getRate($event)"
+>
+  <app-rating-control
+    [name]="icon"
+    *ngFor="let _ of [].constructor(highRate); index as i"    
+    [primaryColorPosition]="primaryColorPosition - iconSize * i"
+    [size]="iconSize"
+  ></app-rating-control>
+</button>

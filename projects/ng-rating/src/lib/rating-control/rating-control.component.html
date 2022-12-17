@@ -1,0 +1,10 @@
+
+<i>
+    <svg [ngStyle]="{width: size, height: size}" viewBox="0 0 24 24">                  
+        <linearGradient [attr.id]="gradientId" [attr.x1]="numberToPercentage(primaryColorPosition / (size/100))" x2="100%" y1="0%" y2="0%">                
+            <stop [attr.stop-color]="icon.hlColor" style="stop-opacity:1"/>              
+            <stop [attr.stop-color]="icon.color" style="stop-opacity:1"/>
+        </linearGradient>
+        <path [attr.fill]="'url(#'+gradientId+')'" [attr.d]="icon.path" />
+    </svg>
+</i>

@@ -1,0 +1,22 @@
+button{        
+    margin: 0;
+    border: none;
+    cursor: pointer;    
+    background: none;   
+}
+
+.rated {
+    animation: grow .6s ease-out;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

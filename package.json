@@ -1,12 +1,15 @@
 {
   "name": "ng-rating-input",
-  "version": "0.0.15",
+  "version": "0.0.1",
+  "author": "Appedro",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-lib": "ng build ng-rating",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate-lib": "npm run build-lib && cd dist/ng-rating && npm pack && tar -xzvf ng-rating-%npm_package_version%.tgz && cd ../../ && npm i dist/ng-rating/package"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +21,7 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "ng-rating": "file:dist/ng-rating/package",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

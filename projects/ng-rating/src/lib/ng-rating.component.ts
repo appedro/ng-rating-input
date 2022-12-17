@@ -2,14 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 
 @Component({
-  selector: 'ng-rating-control',
-  template: `
-    <p>
-      ng-rating works!
-    </p>
-  `,
-  styles: [
-  ]
+  selector: 'ng-rating-input',
+  templateUrl: "./ng-rating-component.html",
+  styleUrls: ["ng-rating.component.scss"]
 })
 export class NgRatingComponent implements OnInit, ControlValueAccessor {
 
